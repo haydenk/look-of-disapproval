@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import "fonts/roboto/roboto-fontface",
+  "fonts/hack/hack-fontface";
+
+$font-stack-system: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+@import
+  "bourbon/bourbon",
+  "base/base",
+  "neat/neat"
+;
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
+.wrapper {
+  @include grid-container($neat-grid);
+}
+
+.site-header {
+  margin-top: 2.75em;
+  h1 {
+    text-align: center;
+    font-size: 7rem;
+    font-weight: normal;
+  }
+}
+
+.home {
+  .post {
+    @include grid-column(3);
+    text-align: center;
+    .body {
+      .title {
+      }
+      p {
+        font-size: 1.3rem;
+        overflow-x: hidden;
+      }
+      .expand {
+        input {
+          text-align: center;
+          font-family: "Hack", "Courier New", serif;
+          font-size: 0.75rem;
+        }
+      }
+      min-height: 140px;
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+title: 'Look of Disapproval'
+description: >- # this means to ignore newlines until "baseurl:"
+  Completely open source and ad-free collection of Looks of Disapproval
+  smilies and emoji in plain text ascii format,
+  easy to copy paste in chats, forums, Reddit posts and comments
+  and Facebook statuses.
+baseurl: ""
+url: ""
+github_username:  haydenk
+
+markdown: kramdown
+exclude: [vendor]
